@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Bio</title>
+</head>
+<body>
+    <header>
+<h1>All About Me~</h1>
+<p>Mario Abel Renaldo Simanjuntak</p>
+    </header>
+    <nav>
+    <b href="" onclick="change(1)">🏠home</b>
+<b href="" onclick="change(2)">😂profile</b>
+<b href="" onclick="change(3)">🅰️about</b>
+    </nav>
+    <section>
+        <div class="box">
+            <h2>summary of qualification</h2>
+            <h3></h3>
+            <ul>
+                <li>Can do all the chores.</li>
+                <li>Can sing.</li>
+                <li>Can play the guitar😆.</li>
+            </ul>
+
+        </div>
+        <div class="box" style="display: none;">173cm tall, black hair, brown eyes,& tan skin.</div>
+        <div class="box" style="display: none;">This website is talking about my BiO~~.</div>
+
+        <script>
+            function change(num){
+             let box = document.getElementsByClassName("box");
+             for (i=0; i < box.length; i++){
+                box[i].style.display = "none";
+             }
+
+             box[num-1].style.display = "block";
+            }
+        </script>
+
+    </section>   
+</body>
+</html>
